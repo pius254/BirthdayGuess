@@ -5,7 +5,7 @@
  */
 package guessbirthday;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 /**
@@ -54,44 +54,29 @@ public class GuessBirthday {
        //Scanner input = new Scanner(System.in);
        
        //Prompt user to answer questions
-        JOptionPane.showMessageDialog(null, "Is your Birthday in set1?\n");
-        JOptionPane.showMessageDialog(null, set1);
-        String input = JOptionPane.showInputDialog("\nEnter 0 for NO and 1 for YES: ");
-        int answer = Integer.parseInt(input);
+        int answer = JOptionPane.showConfirmDialog(null, "Is your Birthday in these numbers?\n" + set1);
         
-        if(answer == 1)
+        if(answer == JOptionPane.YES_OPTION)
             day += 1;
         
-        JOptionPane.showMessageDialog(null, "Is your Birthday in set2?\n");
-        JOptionPane.showMessageDialog(null, set2);
-        input = JOptionPane.showInputDialog("\nEnter 0 for NO and 1 for YES: ");
-        answer = Integer.parseInt(input);
+        answer = JOptionPane.showConfirmDialog(null, "Is your Birthday in these numbers?\n" + set2);
         
-        if(answer == 1)
+        if(answer == JOptionPane.YES_OPTION)
             day += 2;
         
-        JOptionPane.showMessageDialog(null, "Is your Birthday in set3?\n");
-        JOptionPane.showMessageDialog(null, set3);
-        input = JOptionPane.showInputDialog("\nEnter 0 for NO and 1 for YES: ");
-        answer = Integer.parseInt(input);
+        answer = JOptionPane.showConfirmDialog(null, "Is your Birthday in these numbers?\n" + set3);
         
-        if(answer == 1)
+        if(answer == JOptionPane.YES_OPTION)
             day += 4;
         
-        JOptionPane.showMessageDialog(null, "Is your Birthday in set4?\n");
-        JOptionPane.showMessageDialog(null, set4);
-        input = JOptionPane.showInputDialog("\nEnter 0 for NO and 1 for YES: ");
-        answer = Integer.parseInt(input);
+        answer = JOptionPane.showConfirmDialog(null, "Is your Birthday in these numbers?\n" + set4);
         
-        if(answer == 1)
+        if(answer == JOptionPane.YES_OPTION)
             day += 8;
         
-        JOptionPane.showMessageDialog(null, "Is your Birthday in set5?\n");
-        JOptionPane.showMessageDialog(null, set5);
-        input = JOptionPane.showInputDialog("\nEnter 0 for NO and 1 for YES: ");
-        answer = Integer.parseInt(input);
+        answer = JOptionPane.showConfirmDialog(null, "Is your Birthday in these numbers?\n" + set5);
         
-        if(answer == 1)
+        if(answer == JOptionPane.YES_OPTION)
             day += 16;
         
         JOptionPane.showMessageDialog(null, "\nYour Birthday is " + day + " ! ", "BIRTHDAYGUESS", JOptionPane.INFORMATION_MESSAGE);
