@@ -5,6 +5,9 @@
  */
 package guessbirthday;
 
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Kaboom
@@ -44,6 +47,52 @@ public class GuessBirthday {
                 "20 21 22 23\n" +
                 "24 25 26 27\n" +
                 "28 29 30 31";
+        
+       int day = 0;
+       
+       //Create the Scanner
+       Scanner input = new Scanner(System.in);
+       
+       //Prompt user to answer questions
+        JOptionPane.showMessageDialog(null, "Is your Birthday in set1?\n");
+        JOptionPane.showMessageDialog(null, set1);
+        JOptionPane.showMessageDialog(null, "\nEnter 0 for NO and 1 for YES: ");
+        int answer = input.nextInt();
+        
+        if(answer == 1)
+            day += 1;
+        
+        JOptionPane.showMessageDialog(null, "Is your Birthday in set2?\n");
+        JOptionPane.showMessageDialog(null, set2);
+        JOptionPane.showMessageDialog(null, "\nEnter 0 for NO and 1 for YES: ");
+        answer = input.nextInt();
+        
+        if(answer == 1)
+            day += 2;
+        
+        JOptionPane.showMessageDialog(null, "Is your Birthday in set3?\n");
+        JOptionPane.showMessageDialog(null, set3);
+        JOptionPane.showMessageDialog(null, "\nEnter 0 for NO and 1 for YES: ");
+        answer = input.nextInt();
+        
+        if(answer == 1)
+            day += 4;
+        
+        JOptionPane.showMessageDialog(null, "Is your Birthday in set4?\n");
+        JOptionPane.showMessageDialog(null, set4);
+        JOptionPane.showMessageDialog(null, "\nEnter 0 for NO and 1 for YES: ");
+        answer = input.nextInt();
+        
+        if(answer == 1)
+            day += 8;
+        
+        JOptionPane.showMessageDialog(null, "Is your Birthday in set5?\n");
+        JOptionPane.showMessageDialog(null, set5);
+        JOptionPane.showMessageDialog(null, "\nEnter 0 for NO and 1 for YES: ");
+        answer = input.nextInt();
+        
+        if(answer == 1)
+            day += 16;
         
     }
     
