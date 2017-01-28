@@ -94,6 +94,8 @@ public class GuessBirthday {
         if(answer == 1)
             day += 16;
         
+        JOptionPane.showMessageDialog(null, "\nYour Birthday is " + day + " ! ", "BIRTHDAYGUESS", JOptionPane.INFORMATION_MESSAGE);
+        
     }
     
 }
